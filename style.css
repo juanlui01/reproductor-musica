@@ -1,0 +1,66 @@
+*{
+    
+    font-size: 1rem;
+    font-weight: 400;
+    font-family:Rubik, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    padding: unset;
+    margin: unset;
+
+    box-sizing: border-box;
+
+    /* border: solid 1px red; */
+
+}
+
+body, html {
+min-height: 100%;
+
+
+
+}
+
+/* FlexBox */
+
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 30px;
+background-color: #393E84;
+
+}
+
+.titulo {
+font-weight: bold;
+font-size: 35px;
+color: #2CBCFF;
+
+}
+
+.search {
+display: flex;
+color: white;
+justify-content: space-between;
+border-bottom: 2px solid white;
+padding-bottom: 10px;
+min-width: 225px;
+
+}
+
+.playlist {
+    display: flex;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 250px;
+
+}
+.main {
+    
+    background-image: url("assets/home\ \(2\).jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 45px 30px 45px 30px;
+}
