@@ -54,13 +54,62 @@ min-width: 225px;
     color: white;
     align-items: center;
     font-weight: bold;
-    padding-left: 250px;
+    padding-left: 0px;
+    flex-direction: column;
+    width: 50%;
 
 }
+.playlist h4 {
+margin-bottom: 30px;
+
+
+}
+
+.play-icon {
+display: inline-block;
+width: 40px;
+height: 40px;
+background-image: url(/assets/play-icon.svg) ;
+background-repeat: no-repeat;
+ 
+}
+
+.play-icon:hover {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(/assets/play-icon-black.svg) ;
+    background-repeat: no-repeat;
+}
+
+
+.song-info {
+display: flex;
+}
+.song-info img {
+margin-right: 35px;
+border-radius: 50%;
+}
+
+
+#songs {
+width: 100%;
+
+}
+.song-item {
+margin-bottom: 7px;
+border-radius: 10px;
+background-color: rgba(255, 255, 255, 0.1);
+justify-content: space-between;
+
+}
+
+
 .main {
     
     background-image: url("assets/home\ \(2\).jpg");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     padding: 45px 30px 45px 30px;
 }
