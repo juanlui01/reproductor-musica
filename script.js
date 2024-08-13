@@ -5,7 +5,19 @@ let songs = undefined
 
 function buildSongHtml(song) {
   let div = document.createElement('div')
-  div.setAttribute('class', " song-item flex hover:bg-slate-100 transition-all cursor-pointer py-3 px-1 gap-5 items-center text-white hover:text-black ")
+  div.setAttribute('class', " song-item flex hover:bg-slate-100 transition-all cursor-pointer py-3 px-1 gap-5 items-center text-white hover:text-black  ")
+  div.addEventListener('click', function () {
+    //setear la cancion en el elemento audio*
+    const audioElement = document.getElementById('audio')
+    audioElement.setAttribute('src', song.path.audio)
+    audioElement.play()
+    //setear informacion de la cancion en el reproductor//
+    document.getElementById('audio-player-image').setAttribute('src', song.path.front)
+    document.getElementById('audio-player-song').innerHTML = `${song.title} - ${song.album}`
+    document.getElementById('audio-player-author').innerHTML = song.author
+
+  })
+  
 
   div.innerHTML = `
                 <div class="song-info">   
@@ -28,8 +40,6 @@ function buildMainHtml(songs) {
 
     document.getElementById('songs').appendChild(element)
   });
-
-
 }
 
 function getSongs() {
@@ -46,11 +56,24 @@ function initPlayer() {
     .then(function (songsFromApi) {
       songs = songsFromApi
       buildMainHtml(songs)
-
+      initEventListeners()
     })
 
 
 }
+
+function initEventListeners() {
+  const audio = document.getElementById('audio')
+  document.getElementById('play-btn').addEventListener('click', () => audio.play())
+  document.getElementById('pause-btn').addEventListener('click', () => audio.pause())
+  document.getElementById('stop-btn').addEventListener('click', () => audio.pause())
+}
+
+
+
+
+
+
 
 
 

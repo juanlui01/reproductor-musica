@@ -30,29 +30,29 @@
 <body>
 
     <header>
-        <nav >
+        <nav>
 
 
             <div>
                 <img src="/assets/icono.svg" alt="">
-    
+
             </div>
-    
+
             <div class="titulo">
-    
+
                 <h1 class="text-3xl font-bold color-blue">
                     SoundFast
                 </h1>
             </div>
-    
+
             <div>
                 <div class="search">
                     <img src="/assets/buscador.svg" alt="">
                     <h4>Search</h4>
                     <!-- <img src="/assets/Line 1.png" alt=""> -->
-    
+
                 </div>
-    
+
             </div>
 
         </nav>
@@ -60,10 +60,10 @@
 
     </header>
 
-    <main class="main"   id="container">
+    <main class="main" id="container">
 
         <div class="playlist">
-            <h4 >Playlist</h4>
+            <h4>Playlist</h4>
             <div id="songs"></div>
 
         </div>
@@ -72,11 +72,27 @@
 
 
 
-        
-        <div>
 
 
+        <div class="audio-player">
+            <img id="audio-player-image" src="" alt="">
+            <div>
+                <p id="audio-player-song"> </p>
+                <p id="audio-player-author"> </p>
+            </div>
+
+            <audio id="audio" src=""></audio>
+
+            <div class="buttons-icons">
+                <button id="stop-btn"></button>
+                <button id="play-btn"></button>
+                <button id="pause-btn"></button>
+
+
+            </div>
         </div>
+
+
 
 
 
