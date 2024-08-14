@@ -14,11 +14,14 @@
 }
 
 body, html {
-min-height: 100%;
-
-
-
+min-height: 100vh;
 }
+
+@font-face {
+    font-family: juan;
+    src: url('/assets/Chopsic.otf');
+}
+
 
 /* FlexBox */
 
@@ -32,9 +35,11 @@ background-color: #393E84;
 }
 
 .titulo h1 {
-font-weight: bold;
-color: #2CBCFF;
+/* font-weight: bold; */
+color: white;
 font-size: 35px;
+font-family: juan;
+letter-spacing: 5px;
 }
 
 .search {
@@ -55,7 +60,7 @@ min-width: 225px;
     font-weight: bold;
     padding-left: 0px;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
 
 }
 .playlist h4 {
@@ -120,8 +125,8 @@ justify-content: space-between;
     color: white;
     align-items: center;
     font-weight: bold;
-    padding-left: 210px;
-    padding-top: 533px;
+    padding-left: 253px;
+    padding-top: 65px;
     flex-direction: column;
     
     
